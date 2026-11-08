@@ -124,6 +124,8 @@ Cross-Validation F1-Score: 0.655
 
 The model was evaluated on 154 test samples.
 
+![Diabetes Prediction Results](images/model-results.png)
+
 Future Improvements
 
 - Hyperparameter Optimization
