@@ -89,11 +89,40 @@ Place the dataset in the "data" directory and run:
 
 python src/train.py
 
-Results
+## Results
 
-The project compares three machine learning models using cross-validation and evaluates the selected model on a separate test dataset.
+### Cross-Validation Results
 
-Actual evaluation results will be documented here after the final experiment.
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression | 0.788 | 0.764 | 0.575 | 0.655 | 0.843 |
+| Decision Tree | 0.728 | 0.625 | 0.555 | 0.584 | 0.769 |
+| Random Forest | 0.777 | 0.739 | 0.566 | 0.639 | 0.838 |
+
+### Best Model
+
+Logistic Regression
+
+Cross-Validation F1-Score: 0.655
+
+### Final Test Results
+
+| Metric | Score |
+|---|---:|
+| Accuracy | 0.708 |
+| Precision | 0.600 |
+| Recall | 0.500 |
+| F1-Score | 0.545 |
+| ROC-AUC | 0.813 |
+
+### Confusion Matrix
+
+| | Predicted Negative | Predicted Positive |
+|---|---:|---:|
+| Actual Negative | 82 | 18 |
+| Actual Positive | 27 | 27 |
+
+The model was evaluated on 154 test samples.
 
 Future Improvements
 
